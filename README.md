@@ -1,4 +1,4 @@
-# Twitter ChatGPT Bot
+# Twitter OpenAI Bot
 
 A Python bot that automatically interacts with Twitter using ChatGPT.
 
