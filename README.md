@@ -6,7 +6,7 @@ A Python bot that automatically interacts with Twitter using ChatGPT.
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/yourusername/TwitterChatGPTProject.git
 cd TwitterChatGPTProject
 ```
 
@@ -21,19 +21,29 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Configure environment variables in `.env` file:
-```
-TWITTER_API_KEY=your_api_key
-TWITTER_API_SECRET=your_api_secret
-TWITTER_ACCESS_TOKEN=your_access_token
-TWITTER_ACCESS_SECRET=your_access_secret
-OPENAI_API_KEY=your_openai_api_key
+4. Configure environment variables:
+```bash
+cp .env.example .env
+# Edit .env with your actual API keys
 ```
 
 5. Run the bot:
 ```bash
 python src/main.py
 ```
+
+## Environment Variables
+
+Copy `.env.example` to `.env` and fill in your credentials:
+- Twitter API credentials from developer.twitter.com
+- OpenAI API key from platform.openai.com
+
+## Features
+
+- Automatically searches for tweets about programming
+- Uses ChatGPT to generate responses
+- Likes, retweets, and replies to tweets
+- Rate limit handling for both Twitter and OpenAI APIs
 
 ## Development
 
